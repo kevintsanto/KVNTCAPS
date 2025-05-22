@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KVNTCAPS GENUINE</title>
+    <meta name="description"
+        content="Descubre la colección exclusiva de gorras de lujo: New Era 59FIFTY, NFL, NBA, MLB y Snapback. Estilo minimalista y único para los verdaderos conocedores.">
+    <link rel="icon" href="assets/img/favicon.png" type="image/png">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600&family=Montserrat:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <header class="main-header">
+        <nav class="main-nav">
+            <a href="#" class="logo-link">KVNTCAPS</a>
+            <button class="contact-button"
+                onclick="window.open('https://linktr.ee/KVNTCAPS', '_blank')">Contact</button>
+        </nav>
+    </header>
+
+    <main class="main-content">
+        <section class="hero-section">
+            <h1 class="hero-title">KVNTCAPS</h1>
+            <p class="hero-subtitle">Envio Europa-Latinoamerica (Metodo de pago podria cambiar.) </p>
+        </section>
+
+        <section class="categories-section">
+            <h2 class="section-title">Colecciones Exclusivas</h2>
+            <div class="category-grid">
+                <a href="https://2022cap.x.yupoo.com/albums/127629495?uid=1&isSubCate=false&referrercate=4049808"
+                    target="_blank" class="category-card">
+                    <img src="assets/imagenes/1.jpg" alt="New Arrivals 59FIFTY" class="category-img">
+                    <h3 class="category-title">NEW ARRIVALS</h3>
+                    <p class="category-description">Últimas gorras de colección 59FIFTY.</p>
+                </a>
+                <a href="https://2022cap.x.yupoo.com/albums/170838483?uid=1&isSubCate=false&referrercate=4049808"
+                    target="_blank" class="category-card">
+                    <img src="assets/imagenes/2.jpg" alt="59FIFTY Classic" class="category-img">
+                    <h3 class="category-title">59FIFTY CLASSIC</h3>
+                    <p class="category-description">Modelos atemporales de la línea.</p>
+                </a>
+                <a href="https://2022cap.x.yupoo.com/collections/3775870" target="_blank" class="category-card">
+                    <img src="assets/imagenes/3.jpeg" alt="NFL Collection" class="category-img">
+                    <h3 class="category-title">NFL COLLECTION</h3>
+                    <p class="category-description">Gorras de fútbol americano con estilo.</p>
+                </a>
+                <a href="https://2022cap.x.yupoo.com/collections/3848674" target="_blank" class="category-card">
+                    <img src="assets/imagenes/4.jpg" alt="NBA Collection" class="category-img">
+                    <h3 class="category-title">NBA COLLECTION</h3>
+                    <p class="category-description">Modelos de baloncesto para la cancha y la calle.</p>
+                </a>
+                <a href="https://2022cap.x.yupoo.com/collections/3832642" target="_blank" class="category-card">
+                    <img src="assets/imagenes/5.jpg" alt="MLB Collection" class="category-img">
+                    <h3 class="category-title">MLB COLLECTION</h3>
+                    <p class="category-description">La tradición del béisbol en cada diseño.</p>
+                </a>
+                <a href="https://2022cap.x.yupoo.com/albums/135798883?uid=1&isSubCate=false&referrercate=4049808"
+                    target="_blank" class="category-card">
+                    <img src="assets/imagenes/6.jpeg" alt="Snapback Collection" class="category-img">
+                    <h3 class="category-title">SNAPBACK COLLECTION</h3>
+                    <p class="category-description">Estilo urbano y ajustable.</p>
+                </a>
+                <a href="javascript:void(0);" onclick="showAlert('especiales')" class="category-card special-card">
+                    <img src="assets/imagenes/special-soon.jpg" alt="Especiales - Próximamente" class="category-img">
+                    <h3 class="category-title">ESPECIALES</h3>
+                    <p class="category-description">¡Exclusive collections! Comming soon...</p>
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <p>&copy; 2025 KVNTCAPS. Todos los derechos reservados.</p>
+        <div class="social-links">
+            <a href="https://linktr.ee/KVNTCAPS" target="_blank" class="social-link">Linktree</a>
+        </div>
+    </footer>
+    <script>
+        // Función para mostrar la alerta personalizada
+        function openAlert(section) {
+            var alertBox = document.getElementById("customAlert");
+            var alertOverlay = document.getElementById("alertOverlay");
+            var alertMessage = document.querySelector(".custom-alert .alert-message");
+
+            if (section === 'especiales') {
+                alertMessage.textContent = "La sección de Especiales estará disponible pronto. ¡Gracias por tu paciencia!";
+            } else {
+                alertMessage.textContent = "Esta sección estará disponible pronto. ¡Gracias por tu paciencia!";
+            }
+
+            alertBox.style.display = "block";
+            alertOverlay.style.display = "block"; // Muestra el overlay
+        }
+
+        // Función para cerrar la alerta personalizada
+        function closeAlert() {
+            document.getElementById("customAlert").style.display = "none";
+            document.getElementById("alertOverlay").style.display = "none"; // Oculta el overlay
+        }
+    </script>
+
+</body>
+
+</html>
